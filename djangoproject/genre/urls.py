@@ -6,5 +6,7 @@ urlpatterns = [
     path('',views.index.as_view(),name="index"),
 
     #genre/1
-    path('<pk>/',views.details.as_view(),name="details")
+    path('<pk>/',views.details.as_view(),name="details"),
+
+    path('register/',views.UserFormView.as_view(),name="userform"),
 ]
